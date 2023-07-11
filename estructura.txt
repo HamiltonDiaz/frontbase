@@ -1,0 +1,12 @@
+|assets -> para imagnes y videos
+|--images
+|--other-assets
+|components: componentes que son de uso generico, formularios, listas, botones
+|config: para configuraciones especificas,  como una librería de analiticas.
+|locales: para hacer la pagina web multilenguaje
+|route: para incluir las rutas principales.
+|state: para manejar de estados como redux.
+|styles: hojas de estilo css o configuraciones de material ui
+|utils: para conf globales de api metodos get, post, put, para funciones generales, hooks propios.
+|views: componentes principales que son llamados en las rutas principales home, login...
+|
