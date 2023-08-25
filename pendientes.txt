@@ -1,0 +1,12 @@
+en la base de datos de la empresa
+-agregar logo en svg como texto
+-si no hay logo poner uno por defecto
+-razon social, nombre comercial, nit, email, representante legal, cedula representante legal, firma electronica
+-validar si la empresa permite el registro directo por el usuario o solo desde el administrador
+
+
+Login
+-lista deplegable de las empresas
+-en el backend validar si el usuario esta vinculado en la empresa si superadmin debe entrar a todas las empresas
+
+Registro
