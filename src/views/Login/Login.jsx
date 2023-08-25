@@ -45,14 +45,14 @@ function Login() {
                         >
                             ¿Tienes una cuenta?
                             &nbsp;
-                            {/*   <Link
-                                component={NextLink}
+                              <Link
+                                // component={NextLink}
                                 href="/auth/register"
                                 underline="hover"
                                 variant="subtitle2"
                             >
-                                Register
-                            </Link> */}
+                                Registrarse
+                            </Link>
                         </Typography>
                     </Stack>
 
