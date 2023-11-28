@@ -31,12 +31,16 @@ export const SideNavItem = (props) => {
           py: '6px',
           textAlign: 'left',
           width: '100%',
-          ...(active && {
-            backgroundColor: 'rgba(255, 255, 255, 0.04)'
-          }),
+          backgroundColor: 'rgba(255, 255, 255, 0.04)',
           '&:hover': {
-            backgroundColor: 'rgba(255, 255, 255, 0.04)'
-          }
+            backgroundColor: 'rgba(0, 255, 255, 0.09)'
+          },
+          // ...(active && {
+          //   backgroundColor: 'rgba(255, 255, 255, 0.04)'
+          // }),
+          // '&:hover': {
+          //   backgroundColor: 'rgba(255, 255, 255, 0.04)'
+          // }
         }}
         //{...linkProps}
       >
@@ -49,9 +53,10 @@ export const SideNavItem = (props) => {
               display: 'inline-flex',
               justifyContent: 'center',
               mr: 2,
-              ...(active && {
-                color: 'primary.main'
-              })
+              color: 'primary.main',
+              // ...(active && {
+              //   color: 'primary.main'
+              // })
             }}
           >
             {icon}
@@ -60,22 +65,23 @@ export const SideNavItem = (props) => {
         <Box
           component="span"
           sx={{
-            color: 'neutral.400',
+            color: 'primary.main',
+            // color: 'neutral.400',
             flexGrow: 1,
             fontFamily: (theme) => theme.typography.fontFamily,
             fontSize: 14,
             fontWeight: 600,
             lineHeight: '24px',
             whiteSpace: 'nowrap',
-            ...(active && {
-              color: 'common.white'
-            }),
-            ...(disabled && {
-              color: 'neutral.500'
-            })
+            // ...(active && {
+            //   color: 'common.white'
+            // }),
+            // ...(disabled && {
+            //   color: 'neutral.500'
+            // })
           }}
         >
-          {title}
+         {title}
         </Box>
       </ButtonBase>
     </li>

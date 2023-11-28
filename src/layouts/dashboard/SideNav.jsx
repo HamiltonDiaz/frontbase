@@ -12,7 +12,11 @@ import {
   Typography,
   useMediaQuery,
 } from "@mui/material";
+import { styled } from '@mui/material/styles';
 import {items} from "./Config"
+
+const Scrollbar = styled(SimpleBar)``;
+
 
 const SideNav = (props) => {
   const { open, onClose } = props;
@@ -22,7 +26,7 @@ const SideNav = (props) => {
 
   //Define contenido antes de retornar
   const detailsNav = (
-    <SimpleBar
+    <Scrollbar
       sx={{
         height: "100%",
         "& .simplebar-content": {
@@ -155,7 +159,7 @@ const SideNav = (props) => {
           </Button>
         </Box>
       </Box>
-    </SimpleBar>
+    </Scrollbar>
   );
 
   // if (lgUp) {
