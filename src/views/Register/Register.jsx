@@ -15,6 +15,18 @@ import {
     MenuItem
 } from '@mui/material';
 
+const prueba =()=>{
+    let resultado=0
+    for (let i = 1; i < 5; i++) {
+        for (let j = 1; j < 5; j++) {
+        
+            resultado+= i*j
+        }
+        
+    }
+    alert(resultado)
+}
+
 
 function Register() {
     const formik = useFormik({
@@ -319,6 +331,7 @@ function Register() {
                         sx={{ mt: 3 }}
                         type="submit"
                         variant="contained"
+                        onClick={()=>prueba()}
                     >
                         Continuar
                     </Button>
